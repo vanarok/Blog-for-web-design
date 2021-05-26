@@ -179,6 +179,17 @@ nav {
   display: flex;
   justify-content: flex-start;
   margin-left: 130px;
+  white-space: nowrap;
+}
+
+.enter {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.enter-button {
+  margin: 5px 10px;
 }
 
 #menu {
@@ -243,8 +254,9 @@ footer {
 
 .side-card {
   display: block;
-  height: 225px;
+  /*
   padding: 15px;
+  */
   margin-bottom: 20px;
 }
 
@@ -267,6 +279,20 @@ footer {
   border-bottom-right-radius: 4px;
 }
 
+.request-button {
+  text-align: center;
+  display: block;
+  color: black;
+  font-size: 16px;
+  /*margin: 15px -15px -15px;*/
+  padding: 15px 15px 15px;
+  line-height: 1.6;
+  background: #f5f5f5;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+
+}
+
 .post-article {
   padding: 30px;
   min-height: 250px;
@@ -279,15 +305,22 @@ footer {
 }
 
 .last-posts {
-  padding: 5px 15px 15px 15px;
+  padding: 5px 15px 30px 50px;
   margin-bottom: 20px;
   list-style-type: none;
-
+}
+.last-posts-links {
+overflow: hidden;
+line-height: 1.4;
+text-overflow: ellipsis;
+display: flex;
+padding: 5px;
+margin: -5px;
 }
 
 @media only screen and (max-width: 1380px) {
   /* Style adjustments for viewports that meet the condition */
-  .content {
-
+  .side-bar {
+    display: none;
   }
 }
