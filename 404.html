@@ -1,62 +1,45 @@
 <!doctype html>
-<html lang="en">
+<html class="no-js" lang="ru">
 
 <head>
   <meta charset="utf-8">
-  <title>Page Not Found</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <style>
-    * {
-      line-height: 1.2;
-      margin: 0;
-    }
+  <title>Блог Ивана | 404</title>
+  <meta content="width=device-width, initial-scale=1" name="viewport">
 
-    html {
-      color: #888;
-      display: table;
-      font-family: sans-serif;
-      height: 100%;
-      text-align: center;
-      width: 100%;
-    }
+  <link href="site.webmanifest" rel="manifest">
 
-    body {
-      display: table-cell;
-      vertical-align: middle;
-      margin: 2em auto;
-    }
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="fonts/fonts.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
 
-    h1 {
-      color: #555;
-      font-size: 2em;
-      font-weight: 400;
-    }
-
-    p {
-      margin: 0 auto;
-      width: 280px;
-    }
-
-    @media only screen and (max-width: 280px) {
-
-      body,
-      p {
-        width: 95%;
-      }
-
-      h1 {
-        font-size: 1.5em;
-        margin: 0 0 0.3em;
-      }
-
-    }
-  </style>
 </head>
 
 <body>
-  <h1>Page Not Found</h1>
-  <p>Sorry, but the page you were trying to view does not exist.</p>
+<div class="page">
+  <header>
+    <nav>
+      <a href="index.html">
+        <img id="logo" src="img/logo.png">
+      </a>
+      <ul id="menu">
+        <li><a href="#">Видеоблог</a></li>
+        <li><a href="#">Фотозаметки</a></li>
+        <li><a href="#">О блоге</a></li>
+        <li><a href="#">Об авторе</a></li>
+      </ul>
+      <div class="enter">
+        <div class="enter-button"><img src="img/icon-user.svg" style="filter: invert(1);" width="15px"><a
+          href="#">Войти</a></div>
+      </div>
+    </nav>
+  </header>
+
+  <div class="main">
+    <div class="not-found"><br>¯\_(ツ)_/¯</br><span>404, кажется мы потеряли вашу страницу</span></div>
+  </div>
+
+  <footer>Created by vanarok 2021 (c)</footer>
+</div>
 </body>
 
 </html>
-<!-- IE needs 512+ bytes: https://docs.microsoft.com/archive/blogs/ieinternals/friendly-http-error-pages -->
