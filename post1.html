@@ -1,10 +1,133 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Title</title>
-</head>
-<body>
+<!doctype html>
+<html class="no-js" lang="ru">
 
+<head>
+  <meta charset="utf-8">
+  <title>Блог Ивана</title>
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="fonts/fonts.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
+  <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon">
+  <link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+</head>
+
+<body>
+<div class="page">
+  <header>
+    <nav>
+      <a href="index.html">
+        <img id="logo" src="img/logo.png">
+      </a>
+      <ul id="menu">
+        <li><a href="video-blog.html">Видеоблог</a></li>
+        <li><a href="photo.html">Фотозаметки</a></li>
+        <li><a href="about-blog.html">О блоге</a></li>
+        <li><a href="about-author.html">Об авторе</a></li>
+      </ul>
+      <div class="enter">
+        <div class="enter-button"><img src="img/icon-user.svg" style="filter: invert(1);" width="15px"><a
+          href="login.html">Войти</a></div>
+      </div>
+    </nav>
+  </header>
+
+  <div class="main">
+    <div class="content" style="width:850px; padding-top:50px">
+      <p style="color: gray;"><span style="font-size:18pt;font-weight:bold; color:gray;">Комментарии к посту: </span>Lorem
+        ipsum dolor sit
+        amet, consectetur adipisicing elit. Hic, quia!</p>
+      <div class="box" style="padding: 20px"><input id="request-title" placeholder="Ваше имя" type="area">
+        <div id='editControls'>
+          <p>
+            <a data-role='undo' href="#"><i class='fa fa-undo'></i></a>
+            <a data-role='redo' href="#"><i class='fa fa-repeat'></i></a>
+            <a data-role='bold' href="#"><i class='fa fa-bold'></i></a>
+            <a data-role='italic' href="#"><i class='fa fa-italic'></i></a>
+            <a data-role='underline' href="#"><i class='fa fa-underline'></i></a>
+            <a data-role='strikeThrough' href="#"><i class='fa fa-strikethrough'></i></a>
+            <a data-role='justifyLeft' href="#"><i class='fa fa-align-left'></i></a>
+            <a data-role='justifyCenter' href="#"><i class='fa fa-align-center'></i></a>
+            <a data-role='justifyRight' href="#"><i class='fa fa-align-right'></i></a>
+            <a data-role='justifyFull' href="#"><i class='fa fa-align-justify'></i></a>
+            <a data-role='indent' href="#"><i class='fa fa-indent'></i></a>
+            <a data-role='outdent' href="#"><i class='fa fa-outdent'></i></a>
+            <a data-role='insertUnorderedList' href="#"><i class='fa fa-list-ul'></i></a>
+            <a data-role='insertOrderedList' href="#"><i class='fa fa-list-ol'></i></a>
+            <a data-role='h1' href="#">h<sup>1</sup></a>
+            <a data-role='h2' href="#">h<sup>2</sup></a>
+            <a data-role='p' href="#">p</a>
+            <a data-role='subscript' href="#"><i class='fa fa-subscript'></i></a>
+            <a data-role='superscript' href="#"><i class='fa fa-superscript'></i></a>
+          </p>
+        </div>
+        <div contenteditable id='editor'>
+          Ваш комментарий
+        </div>
+        <div>
+          <a class="request-button" href="post1.html"
+             style="color:white; padding-top: 20px; border: 3px solid #f1f1f1;background-color: #662fa8;margin-top: 20px;">Комментировать</a>
+        </div>
+
+      </div>
+      <div class="box" style="margin-top: 20px; padding: 1px 20px 5px;">
+        <div class="detailBox">
+          <div class="actionBox">
+            <ul class="commentList">
+              <li>
+                <div class="commenterImage">
+                  <img src="http://placekitten.com/50/50"/>
+                </div>
+                <div class="commentText">
+                  <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A asperiores corporis culpa
+                    dolorum exercitationem maiores minima sint suscipit velit veritatis. Amet asperiores nostrum tempora
+                    temporibus veritatis. Fugit non omnis voluptas!</p> <span class="date sub-text">5 марта, 2021</span>
+
+                </div>
+              </li>
+              <li>
+                <div class="commenterImage">
+                  <img src="http://placekitten.com/45/45"/>
+                </div>
+                <div class="commentText">
+                  <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aliquam amet autem
+                    cum eaque excepturi fugiat illum inventore ipsum libero nam perferendis porro possimus quaerat rem,
+                    tempore tenetur unde? Ad.</p> <span class="date sub-text">5 марта, 2021</span>
+
+                </div>
+              </li>
+              <li>
+                <div class="commenterImage">
+                  <img src="http://placekitten.com/40/40"/>
+                </div>
+                <div class="commentText">
+                  <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aliquid distinctio
+                    doloribus eos eveniet magni officia omnis pariatur placeat repellat rerum sint, sunt. Amet
+                    distinctio doloremque ipsa quaerat, sed voluptatibus?.</p> <span class="date sub-text">5 марта, 2021 </span>
+
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <aside class=" side-bar">
+                  <div class="side-card box"><p class="card-text">" 99 % ошибок компьютера сидят в полуметре от
+                    монитора. "
+                  </p>
+                  </div>
+                  <div class="side-card box">
+                    <a class="request-button" href="request.html">Предложить пост</a>
+                  </div>
+                  </aside>
+                </div>
+
+                <footer>Created by vanarok 2021 (c)</footer>
+          </div>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+          <script src="/js/main.js"></script>
 </body>
+
 </html>

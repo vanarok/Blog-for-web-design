@@ -13,5 +13,9 @@
   },
   "devDependencies": {
     "parcel-bundler": "1.12.3"
+  },
+  "dependencies": {
+    "css": "^3.0.0",
+    "jquery": "^3.6.0"
   }
 }
